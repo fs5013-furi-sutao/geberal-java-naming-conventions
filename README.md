@@ -5,12 +5,18 @@
 ### 変数名
 変数名は、「頭文字が小文字のキャメルケース（Camel Case）」となる。頭文字が小文字で、複数の単語を組み合わせてメソッド名を構成する場合は、各単語の先頭を大文字にする（変数名と同じ形式）。
 
+```console
+userName
+```
 ```java
 private String userName = "Mike";
 ```
 
 ### 定数名
 定数名はすべて大文字とする。複数の単語を組み合わせて構成する場合は、各単語の間を '_'（アンダースコア）で区切る。
+```console
+MAX_VALUE
+```
 ```java
 public static final int MAX_VALUE = 100;
 ```
@@ -31,16 +37,22 @@ for (int i = 0; i < ROW_MAX; i++) {
 ## メソッド
 ### メソッド名
 メソッド名は、「頭文字が小文字のキャメルケース（Camel Case）」となる。頭文字が小文字で、複数の単語を組み合わせてメソッド名を構成する場合は、各単語の先頭を大文字にする（変数名と同じ形式）。
+```console
+updateEmplyees()
+```
 ```java
-public void  {
+public int updateEmplyees(Employee employee) {
     // body
 }
 ```
 
 ### ファクトリメソッド名
 ファクトリメソッド（インスタンスを生成するメソッド）名は、メソッド名の先頭に 'create' をつけ、その後ろにメソッドで生成するオブジェクト名を続ける。
+```console
+createCars()
+```
 ```java
-public int updateEmplyees(Employee employee) {
+public List<Car>  createCars() {
     // body
 }
 ```
@@ -49,6 +61,9 @@ public int updateEmplyees(Employee employee) {
 boolean 変数を返却するメソッド名は戻り値の状態が判断できる名前を付ける。メソッド名の先頭に 'is'、'can'、'has' などを付けて、「～か」というような疑問文になるようなメソッド名を付け、変数の中身が直感的に想像できるような名前にする。
 
 たとえば、'isEmpty()' だったら「空っぽか？」となるので、true だったら「空です」となり、false だったら「空じゃない」です、となる。
+```console
+isEmpty()
+```
 ```java
 public boolean isEmpty() {
     // body
